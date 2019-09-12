@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+#include <math.h>
+
+int main()
+
+float nt1, nt2, nt3, media;
+
+		    printf("Informe sua primeira nota: ");
+	            scanf("%f",&nt1);
+              
+	            printf("Informe sua segunda nota: ");
+	            scanf("%f",&nt2);
+              
+	            printf("Informe sua terceira nota: ");
+	            scanf("%f",&nt3);
+              
+	            media = ((nt1 + nt2 + (nt3 * 2))/4);
+		     printf("Sua média foi: %f\n",media);
+			    if(media >= 60){
+                                printf("Você foi aprovado\n");
+}
+else {
+  printf("Você foi reprovado\n");
+}
