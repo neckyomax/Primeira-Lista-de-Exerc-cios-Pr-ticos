@@ -1,0 +1,69 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+#include <math.h>
+
+int main ()
+{	
+	setlocale (LC_ALL,"Portuguese");
+	
+	long int decimal,q,r,hexadecimal,j;
+	char nome;
+	   printf("Bem-vindo ao menu 9\n"); //Transformação da matricula em hexa-decimal e a repitação do nome
+       printf("sua matricula, por favor: \n");
+	   scanf("%ld", &decimal);
+	   printf("seu nome, por favor: ");
+	   scanf("%s",nome);
+
+	   q = decimal;
+
+	   while (q != 0)
+	   {
+	   r = q % 16;          
+	   if (r < 10)
+	   hexadecimal [j++] = 48 + r;   
+	   
+	   else
+	   hexadecimal[j++] = 55 + r;   
+	   q = q / 16;            
+	   }
+	   printf("olá %s ",nome);
+	   printf("sua matricula em hexadecimal :",decimal);
+
+
+
+	  for (i = j; i >= 0; i--)
+	  printf("%c", hexadecimal[i]);
+	  printf("\n");
+	 }
+	   else{ 
+	   printf("\nComando inválido, por favor digite outro número: ");
+       } 
+    //Opções a serem repetidas + Leitor de variavel
+
+	printf("\nDigite 0 para finalizar o programa\n"
+	       "1 para o menu um\n"
+		   "2 para o menu dois\n"
+		   "3 para o menu três\n"
+		   "4 para o menu quatro\n"
+		   "5 para o menu cinco\n"
+		   "6 para o menu seis\n"
+		   "7 para o menu sete\n"
+		   "8 para o menu oito\n"
+		   "9 para o menu nove\n");
+	scanf("%d", &a); 
+	system("cls");
+
+
+
+	  if (a==0){  //Finaliza o programa
+	printf("Programa finalizado!");
+    }
+}
+    system("cls");
+ 	return 0;
+ }
+
+				
+	return 0;
+}
