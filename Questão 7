@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+#include <math.h>
+
+int main ()
+{	
+	setlocale (LC_ALL,"Portuguese");
+
+	float nt1, nt2, media;
+		
+		printf("Informe sua primeira nota: ");
+		scanf("%f",&nt1);
+		
+		if(nt1 < 0 || nt1 > 10) {
+   		printf("\nNota invalida!\n");
+   		exit(1);
+}
+		printf("Informe sua segunda nota: ");
+		scanf("%f",&nt2);
+		if(nt2 < 0 || nt2 > 10) {
+   		printf("\nNota invalida!\n");
+   		exit(1);
+}
+		media = ((nt1 + nt2) /2);
+		printf("Sua media foi: %f\n",media);
+				
+	return 0;
+}
