@@ -1,0 +1,89 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+	int main()
+	{
+		setlocale(LC_ALL, "");
+		
+		int numero;
+		
+		printf("\nDigite 0 para finalizar o programa\n"
+	       "1 para o menu um:\n"
+		   "2 para o menu dois:\n"
+		   "3 para o menu três:\n"
+		   "4 para o menu quatro:\n"
+		   "5 para o menu cinco:\n"
+		   "6 para o menu seis:\n"
+		   "7 para o menu sete:\n"
+		   "8 para o menu oito:\n"
+		   "9 para o menu nove:\n");
+		scanf("%d", &numero);
+		
+		switch (numero)
+		{
+		case 1:
+			//faça um programa que ler um numero e diga se ele é par ou não
+			int x;
+			
+			printf("Digite um numero:");//recebe a variavel do usuario
+			scanf("%d", &x);//cpta e armazena o valor digitado
+			
+			if(x % 2 == 0) {//faz o calculo 
+			printf("esse numero é par!");//informa ao usuario que o numero digitado é par
+		}
+			else {
+			
+			printf("esse numero não é par!");//informa ao usuario se o numero digitado for impa
+		}
+			break;
+			
+		case 2:
+			float n1, n2, mult;//variaveis
+				
+			printf("Digite dois numeros:");//pede os números ao usuario
+			scanf("%f", &n1);//colhe os números
+			scanf("%f", &n2);
+				
+			mult = n1 * n2;//faz a potenciação
+				
+			if(n1 >= 1  && n2 >=1  )//se os numeros forem maior que 1 eles executam o programa	
+			printf("O resultado do primeiro elevado ao segundo é %.1f", mult);
+			
+			else//caso os numeros forem menor que zero exibe essa menssagem
+			printf("O valor digitado é incorreto!");
+		 	
+		break;
+				
+		case 3:
+					
+					
+		case 4:
+					
+					
+		case 5:
+			
+			int n3;
+					
+			printf("Digite um ano:");
+			scanf("%d", &n3);
+					
+			if(n3 %4==0){
+					
+			printf("Esse é um ano bissexto!");
+			}
+					
+			else{
+					
+			printf("Esse não é um ano bissexto!");
+			}
+					
+		break;
+					
+			
+					
+				
+}
+
+		
+		}
