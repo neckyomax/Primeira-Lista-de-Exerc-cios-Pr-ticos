@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main(){
+
+printf("Informe um número de ponto flutuante para A: ");
+scanf("%f",&a);
+
+printf("Informe um número inteiro, diferente de zero, para B: ");
+scanf("%d",&b);
+
+printf("A raiz de A na base B é: %e.\n",pow(a,(1.0/(float)b)));
+
+}
